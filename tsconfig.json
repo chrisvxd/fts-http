@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "build"
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../fts" },
+    { "path": "../fts-core" },
+    { "path": "../fts-validator" }
+  ]
+}
