@@ -60,7 +60,7 @@ export function createHttpHandler(
           Object.keys(params).forEach(
             (name) =>
               definition.params.order.indexOf(name) === -1 &&
-              args.push(params[name])
+              args.push([name, params[name]])
           )
         }
 
